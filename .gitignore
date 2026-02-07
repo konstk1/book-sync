@@ -1,3 +1,8 @@
+# book-sync runtime data
+data/
+config/settings.yaml
+.claude/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
