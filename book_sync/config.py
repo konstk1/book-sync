@@ -6,10 +6,9 @@ from pathlib import Path
 import yaml
 
 DEFAULTS = {
-    "model": "large-v3-turbo",
+    "model": "mlx-community/whisper-large-v3-turbo",
     "ffmpeg_path": "ffmpeg",
     "sample_rate": 16000,
-    "device": "auto",
 }
 
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "settings.yaml"
@@ -21,7 +20,6 @@ class Settings:
     model: str = DEFAULTS["model"]
     ffmpeg_path: str = DEFAULTS["ffmpeg_path"]
     sample_rate: int = DEFAULTS["sample_rate"]
-    device: str = DEFAULTS["device"]
 
 
 def load_settings(path: Path | None = None) -> Settings:

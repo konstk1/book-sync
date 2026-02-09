@@ -15,7 +15,7 @@ class FeedInfo:
 class State:
     stage: str = "downloading"
     last_segment: int = 0
-    model: str = "large-v3-turbo"
+    model: str = "mlx-community/whisper-large-v3-turbo"
     checksums: dict[str, str] = field(default_factory=dict)
 
 
