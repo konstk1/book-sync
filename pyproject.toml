@@ -16,3 +16,4 @@ dependencies = [
 
 [project.scripts]
 transcribe = "cli:main"
+search = "cli:search_main"
